@@ -56,6 +56,9 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Oszt&#xe1;s"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuMuveletekOsztActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuMuveletekSzorz">
               <Properties>
@@ -147,7 +150,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                          <Component id="lbFeladat" min="-2" pref="66" max="-2" attributes="0"/>
+                          <Component id="lblFeladat" min="-2" pref="66" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="txtEredmeny" min="-2" pref="45" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
@@ -167,7 +170,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="lbFeladat" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblFeladat" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtEredmeny" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnEllenorzes" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -179,7 +182,7 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="lbFeladat">
+        <Component class="javax.swing.JLabel" name="lblFeladat">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="4"/>
             <Property name="text" type="java.lang.String" value="5 + 12 ="/>
@@ -191,6 +194,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Ellen&#x151;rz&#xe9;s"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEllenorzesActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="lblValasz">
           <Properties>
