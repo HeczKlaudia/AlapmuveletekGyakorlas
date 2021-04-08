@@ -3,24 +3,33 @@ package alapmuveletek;
 public class Muveletek extends javax.swing.JFrame {
 
     String osztas = "12:4";
-    
+
     public Muveletek() {
         initComponents();
     }
 
     private void osztas() {
-       lblFeladat.setText(osztas); 
+        lblFeladat.setText(osztas);
     }
-    
+
     private void ellenorzes() {
+        /* osztás */
+        btnEllenorzes.setEnabled(true);
         int szam = Integer.parseInt(txtEredmeny.getText());
-        if (szam==3) {
+
+        if (szam == 3) {
+            txtEredmeny.setText("");
             lblValasz.setText("Jó válasz!");
+            btnEllenorzes.setEnabled(false);
+        } else if (txtEredmeny.getText().isEmpty()) {
+            txtEredmeny.setText("");
+            lblValasz.setText("Nem adtál meg választ!");
         } else {
+            txtEredmeny.setText("");
             lblValasz.setText("Rossz válasz!");
         }
     }
-    
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
